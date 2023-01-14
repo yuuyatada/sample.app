@@ -16,7 +16,7 @@ class ListsController < ApplicationController
     flash[:notice] = "投稿が成功しました"
     redirect_to list_path(list.id)
     
-end 
+  end 
 
   def index
     @lists = List.all
